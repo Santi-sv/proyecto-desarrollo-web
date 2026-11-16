@@ -8,14 +8,14 @@
 <body>
 
   <header>
-    <p><strong>Chaw Fan</strong></p>
-    <nav>
+    <p><a href="../index.html"><strong>Chaw Fan</strong></a></p>
+    <nav aria-label="Navegación principal">
       <ul>
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="menu.html">Menú</a></li>
         <li><a href="sucursales.html">Sucursales</a></li>
         <li><a href="promociones.html">Promociones</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="contacto.html" aria-current="page">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -23,52 +23,59 @@
   <main>
     <section>
       <h1>Ponete en contacto</h1>
-      <p>Completá el formulario para reservar mesa o hacernos tu consulta.</p>
+      <p>Usá este formulario de ejemplo para ver qué datos se piden al reservar o hacer una consulta. El envío está deshabilitado.</p>
 
       <form action="#" method="post">
-        <div>
+        <p>
           <label for="nombre">Nombre y apellido:</label>
           <input type="text" id="nombre" name="nombre" required>
-        </div>
+        </p>
 
-        <div>
+        <p>
           <label for="email">Correo electrónico:</label>
           <input type="email" id="email" name="email" required>
-        </div>
+        </p>
 
-        <div>
+        <p>
           <label for="sucursal">Elegí la sucursal:</label>
           <select id="sucursal" name="sucursal">
             <option value="barrio-chino">Barrio Chino</option>
             <option value="centro">Centro</option>
           </select>
-        </div>
+        </p>
 
-        <div>
+        <p>
           <label for="mensaje">Mensaje o detalle de la reserva:</label>
           <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-        </div>
+        </p>
 
-        <button type="submit">Enviar</button>
+        <button type="submit" disabled>Enviar</button>
       </form>
     </section>
 
     <section>
       <h2>Atención al cliente</h2>
+      <p>Podés consultar por una reserva, los platos de la carta o los horarios de cada sucursal.</p>
       <article>
         <h3>Horarios de recepción</h3>
         <p>Respondemos consultas todos los días de 10:00 a 22:00 hs.</p>
       </article>
 
       <figure>
-        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600" alt="Mesa servida en el salón de Chaw Fan">
-        <figcaption>Vení a compartir nuestra mesa.</figcaption>
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600" alt="Salón de restaurante con mesas y luces cálidas">
+        <figcaption>Imagen ilustrativa de un salón para compartir una comida.</figcaption>
       </figure>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2026 Chaw Fan. Todos los derechos reservados.</p>
+    <nav aria-label="Compartir el proyecto en redes sociales">
+      <ul>
+        <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgithub.com%2FSanti-sv%2Fproyecto-desarrollo-web%2Ftree%2Fmain%2FChawfan">Compartir en Facebook</a></li>
+        <li><a href="https://x.com/intent/post?url=https%3A%2F%2Fgithub.com%2FSanti-sv%2Fproyecto-desarrollo-web%2Ftree%2Fmain%2FChawfan">Compartir en X</a></li>
+      </ul>
+    </nav>
   </footer>
 
 </body>
